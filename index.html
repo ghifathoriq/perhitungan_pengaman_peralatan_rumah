@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saran Pengaman Peralatan Rumah Tangga</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 style="text-transform: uppercase">
+        Web Aplikasi perhitungan nilai pengaman MCB untuk keamanan peralatan
+        rumah
+      </h1>
+      <h5>
+        Nama kelompok: M Ghifari F T, Rafli F Guzuntoro, Ruben Adam J, Indra
+        Ukasya, Setiyo Hari A, Erwin Setiawan W, Fathir Fathan H, Juniar Indra
+        B, M Alwan F
+      </h5>
+    </header>
+    <main>
+      <div class="input-container">
+        <label>Pilih Peralatan Rumah Tangga:</label>
+        <div>
+          <input type="checkbox" id="lamp" value="lamp" />
+          <label for="lamp">Lampu</label>
+          <input type="number" id="lamp-power" placeholder="Daya (watt)" />
+        </div>
+        <div>
+          <input type="checkbox" id="iron" value="iron" />
+          <label for="iron">Setrika</label>
+          <input type="number" id="iron-power" placeholder="Daya (watt)" />
+        </div>
+        <div>
+          <input type="checkbox" id="fridge" value="fridge" />
+          <label for="fridge">Kulkas</label>
+          <input type="number" id="fridge-power" placeholder="Daya (watt)" />
+        </div>
+        <div>
+          <input type="checkbox" id="washingMachine" value="washingMachine" />
+          <label for="washingMachine">Mesin Cuci</label>
+          <input
+            type="number"
+            id="washingMachine-power"
+            placeholder="Daya (watt)"
+          />
+        </div>
+        <div>
+          <input type="checkbox" id="fan" value="fan" />
+          <label for="fan">Kipas Angin</label>
+          <input type="number" id="fan-power" placeholder="Daya (watt)" />
+        </div>
+        <div>
+          <input type="checkbox" id="ac" value="ac" />
+          <label for="ac">AC</label>
+          <input type="number" id="ac-power" placeholder="Daya (watt)" />
+        </div>
+        <div>
+          <input type="checkbox" id="hairdryer" value="hairdryer" />
+          <label for="hairdryer">Pengering Rambut (Hairdryer)</label>
+          <input type="number" id="hairdryer-power" placeholder="Daya (watt)" />
+        </div>
+        <div>
+          <input type="checkbox" id="waterPump" value="waterPump" />
+          <label for="waterPump">Pompa Air</label>
+          <input type="number" id="waterPump-power" placeholder="Daya (watt)" />
+        </div>
+      </div>
+      <button id="showButton">Tampilkan Saran Pengaman</button>
+      <div id="safety-tips"></div>
+      <table id="result-table">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama Peralatan</th>
+            <th>Daya (Watt)</th>
+          </tr>
+        </thead>
+        <tbody id="result-body"></tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Total Daya</td>
+            <td id="total-power"></td>
+          </tr>
+          <tr>
+            <td colspan="2">MCB yang Cocok</td>
+            <td id="mcb-value"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+    <footer>
+      <p>&copy; 2024 Saran Pengaman Peralatan Rumah Tangga</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
